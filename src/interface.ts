@@ -19,15 +19,15 @@ export interface GenericResponse {
 }
 
 const keys: { [key: string]: string[]; } = {
-    country: ["country_name", "country.name", "country"],
-    countryCode: ["country_code", "country.code", "country"],
+    country: ["country_name", "country.name", "country", "geobytescountry"],
+    countryCode: ["country_code", "country.code", "country", "countryCode", "geobytesinternet"],
     region: ["region"],
-    regionCode: ["region_code"],
-    city: ["city"],
+    regionCode: ["region_code", "regionName", ],
+    city: ["city", "geobytescity", "region"],
     postal: ["postal"],
-    ip: ["ip"],
-    latitude: ["location.latitude", "latitude", "lat"],
-    longitude: ["location.longitude", "longitude", "lon"],
+    ip: ["ip", "query"],
+    latitude: ["location.latitude", "latitude", "lat", "geobyteslatitude"],
+    longitude: ["location.longitude", "longitude", "lon", "geobyteslongitude"],
     timezone: ["location.timezone", "timezone"],
     __latlon: ["loc"]
 };
