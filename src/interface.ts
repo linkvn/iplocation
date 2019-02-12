@@ -19,10 +19,10 @@ export interface GenericResponse {
 }
 
 const keys: { [key: string]: string[]; } = {
-    country: ["country_name", "country.name", "country", "geobytescountry"],
+    country: ["country_name", "country.name", "country", "geobytescountry", "countryName"],
     countryCode: ["country_code", "country.code", "country", "countryCode", "geobytesinternet"],
-    region: ["region"],
-    regionCode: ["region_code", "regionName", ],
+    region: ["region", "stateProv"],
+    regionCode: ["region_code", "regionName", "stateProv"],
     city: ["city", "geobytescity", "region"],
     postal: ["postal"],
     ip: ["ip", "query"],
